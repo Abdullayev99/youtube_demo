@@ -1,0 +1,67 @@
+.subscriptions {
+  margin-bottom: 100px;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+.subscriptions__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #000;
+}
+
+.subscriptions__list {
+  @include reset-list;
+}
+
+.subscriptions__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.subscriptions__link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: #898989;
+
+  &:hover {
+    color: #ff0000;
+  }
+
+  &::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+}
+
+.one::before {
+  background-image: url('/img/user-pic-girlll.svg');
+}
+.two::before {
+  background-image: url('/img/subs-2.svg');
+}
+.three::before {
+  background-image: url('/img/subs-3.svg');
+}
+.four::before {
+  background-image: url('/img/subs-4.svg');
+}
+.five::before {
+  background-image: url('/img/subs-5.svg');
+}
+.six::before {
+  background-image: url('/img/subs-6.svg');
+}

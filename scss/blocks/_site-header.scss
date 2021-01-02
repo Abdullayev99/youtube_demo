@@ -1,0 +1,158 @@
+.site-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.site-header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-header__toggler-btn {
+  margin-right: 25px;
+  padding: 0;
+  border: none;
+  width: 20px;
+  height: 17px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("/img/gamburger.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20px 17px;
+  flex-shrink: 0;
+}
+
+.site-header__left {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.site-header__form {
+  display: flex;
+  background: #EBEBEB;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: 22px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.site-header__input {
+  background: #EBEBEB;
+  padding: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.site-header__search-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  background-image: url('/img/search.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.site-header__right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-header__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-header__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.button {
+  padding: 0;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+}
+
+.site-header__create-btn {
+  background-image: url("/img/video-img.svg");
+  width: 27px;
+  height: 20px;
+}
+
+.site-header__apps {
+  background-image: url("/img/apps-img.svg");
+  width: 21px;
+  height: 21px;
+}
+
+.site-header__notifications {
+  background-image: url("/img/notifications-img.svg");
+  width: 27px;
+  height: 32px;
+}
+
+.site-header__avatar {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-left: 45px;
+}
+
+// RESPONSIVE
+@include breakpoint-down (715) {
+
+  .site-header__toggler-btn {
+    display: none;
+  }
+
+  .site-header__list {
+    display: none;
+  }
+
+  ::placeholder {
+    color: transparent;
+  }
+
+  .site-header__avatar {
+    margin-left: 0;
+  }
+
+  .site-header__left {
+    max-width: 100%;
+  }
+}

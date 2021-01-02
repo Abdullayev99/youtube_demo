@@ -1,0 +1,125 @@
+.sitenav__list {
+  @include reset-list;
+  margin-bottom: 55px;
+}
+
+.sitenav__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sitenav__link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: #898989;
+
+  &:hover {
+    color: #ff0000;
+  }
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-shrink: 0;
+  }
+}
+
+.home::before {
+  background-image: url('/img/home-icon.svg');
+}
+.trending::before {
+  background-image: url('/img/trending-img.svg');
+}
+.subscription::before {
+  background-image: url('/img/subs-img.svg');
+}
+
+
+.sitenav__bottom-list {
+  @include reset-list;
+  margin-bottom: 55px;
+}
+
+.sitenav__bottom-item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sitenav__bottom-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: #898989;
+
+  &:hover {
+    color: #ff0000;
+  }
+
+  &::before {
+    content: '';
+    width: 25px;
+    height: 20px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-shrink: 0;
+  }
+}
+
+.library::before {
+  background-image: url('/img/library-img.svg');
+}
+.history::before {
+  background-image: url('/img/history-img.svg');
+}
+.watch::before {
+  background-image: url('/img/watch-later-img.svg');
+}
+.favorites::before {
+  background-image: url('/img/favourites-img.svg');
+}
+.liked::before {
+  background-image: url('/img/liked-img.svg');
+}
+.music::before {
+  background-image: url('/img/music-img.svg');
+}
+.games::before {
+  background-image: url('/img/games-img.svg');
+}
+
+.sitenav__show-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: #898989;
+
+  &:hover {
+    color: #ff0000;
+  }
+
+  &::before {
+    content: '';
+    width: 13px;
+    height: 7px;
+    background-image: url('/img/array-down-show-more.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}

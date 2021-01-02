@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- SITE HEADER  -->
+  <header class="site-header">
+    <div class="container site-header__container">
+
+      <button class="site-header__toggler-btn js-site-header__toggler-btn" aria-label="toggler">
+      </button>
+
+      <div class="site-header__left">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="logo image" width="116" height="25">
+        </a>
+
+        <form class="site-header__form js-search-form" action="https://echo.htmlacademy.ru" method="GET" autocomplete="off">
+          <input class="site-header__input" aria-label="search" type="search" name="search" placeholder="Search">
+          <button class="site-header__search-button" type="submit"></button>
+        </form>
+      </div>
+
+      <div class="site-header__right">
+        <ul class="site-header__list">
+          <li class="site-header__item">
+            <button class="button site-header__create-btn" type="button" aria-label="create video icon"></button>
+          </li>
+
+          <li class="site-header__item">
+            <button class="button site-header__apps" type="button" aria-label="youtube icons"></button>
+          </li>
+
+          <li class="site-header__item">
+            <button class="button site-header__notifications" type="button" aria-label="notifications icon"></button>
+          </li>
+        </ul>
+
+        <button class="site-header__avatar" aria-label="avatar image" type="button">
+          <img src="img/Userpic.svg" alt="avatar image" width="40" height="40">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SITE MAIN  -->
+  <main class="site-main js-site-main">
+    <div class="site-main__wrapper ">
+        <!-- SITE MAIN LEFT SIDE  -->
+    <div class="site-main__left js-site-main--open">
+
+      <!-- SITE NAVIGATION  -->
+      <section class="sitenav">
+        <div class="container">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link home" href="#">
+                Home
+              </a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link trending" href="#">
+                Trending
+              </a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link subscription" href="#">
+                Subscriptions
+              </a>
+            </li>
+          </ul>
+
+          <!-- SECOND SITENAV LIST  -->
+          <ul class="sitenav__bottom-list">
+            <li class="sitenav__bottom-item">
+              <a class="sitenav__bottom-link library" href="#">
+                Library
+              </a>
+            </li>
+            <li class="sitenav__bottom-item">
+              <a class="sitenav__bottom-link history" href="#">
+                History
+              </a>
+            </li>
+            <li class="sitenav__bottom-item">
+              <a class="sitenav__bottom-link watch" href="#">
+                Watch later
+              </a>
+            </li>
+            <li class="sitenav__bottom-item">
+              <a class="sitenav__bottom-link favorites" href="#">
+                Favorites
+              </a>
+            </li>
+            <li class="sitenav__bottom-item">
+              <a class="sitenav__bottom-link liked" href="#">
+                Liked videos
+              </a>
+            </li>
+            <li class="sitenav__bottom-item">
+              <a class="sitenav__bottom-link music" href="#">
+                Music
+              </a>
+            </li>
+            <li class="sitenav__bottom-item">
+              <a class="sitenav__bottom-link games" href="#">
+                Games
+              </a>
+            </li>
+            <li class="sitenav__bottom-item">
+              <button class="sitenav__show-btn show" aria-label="show more" type="button">Show more</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SUBSCRIPTIONS SECTION  -->
+      <section class="subscriptions">
+        <div class="container">
+          <h3 class="subscriptions__heading">Subscriptions</h3>
+          <ul class="subscriptions__list">
+            <li class="subscriptions__item">
+              <a class="subscriptions__link one" href="#">
+                Gussie Singleton
+              </a>
+            </li>
+            <li class="subscriptions__item">
+              <a class="subscriptions__link two" href="#">
+                Nora Francis
+              </a>
+            </li>
+            <li class="subscriptions__item">
+              <a class="subscriptions__link three" href="#">
+                Belle Briggs
+              </a>
+            </li>
+            <li class="subscriptions__item">
+              <a class="subscriptions__link four" href="#">
+                Eunice Cortez
+              </a>
+            </li>
+            <li class="subscriptions__item">
+              <a class="subscriptions__link five" href="#">
+                Leah Berry
+              </a>
+            </li>
+            <li class="subscriptions__item">
+              <a class="subscriptions__link six" href="#">
+                Gussie Singleton
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+    </div>
+    <!-- SITE MAIN RIGHT  -->
+    <div class="site-main__right">
+      <!-- USER SECTION  -->
+      <section class="user">
+        <div class="container">
+          <div class="user-info">
+            <img class="user__image" src="/img/user-pic-girlll.svg" alt="user image" width="50" height="50">
+            <p class="user__name">Dollie Blair</p>
+          </div>
+
+          <ol class="user__list js-user__list">
+
+            <template class="js-user-item-template">
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <img class="user-video__img" src="/img/user-pic-one.jpg" alt="image" width="250" height="150" srcset="/img/user-pic-one.jpg 1x, /img/user-pic-one@2x.jpg 2x">
+                  <span class="user-video__time">4:15</span>
+                  <p class="user-video__title">A Brief History Of Creation</p>
+
+                  <div class="user-video__bottom">
+                    <p class="user-video__view-amount">80k views · 3 days ago</p>
+                    <p class="user-video__author">Dollie Blair</p>
+                  </div>
+                </a>
+              </li>
+            </template>
+            <!-- <li class="user__item">
+              <a class="user__link" href="#">
+                <img class="user-video__img" src="/img/user-pic-two.jpg" alt="image" width="250" height="150" srcset="/img/user-pic-two.jpg 1x, /img/user-pic-two@2x.jpg 2x">
+                <span class="user-video__time">8:00</span>
+                <p class="user-video__title">Selecting The Right Hotel</p>
+
+                <div class="user-video__bottom">
+                  <p class="user-video__view-amount">123k views · 1 months ago</p>
+                  <p class="user-video__author">Dollie Blair</p>
+                </div>
+              </a>
+            </li>
+            <li class="user__item">
+              <a class="user__link" href="#">
+                <img class="user-video__img" src="/img/user-pic-three.jpg" alt="image" width="250" height="150" srcset="/img/user-pic-three.jpg 1x, /img/user-pic-three.jpg@2x.jpg 2x">
+                <span class="user-video__time">5:32</span>
+                <p class="user-video__title">Asteroids</p>
+
+                <div class="user-video__bottom">
+                  <p class="user-video__view-amount">43k views · 12 days ago</p>
+                  <p class="user-video__author">Dollie Blair</p>
+                </div>
+              </a>
+            </li>
+            <li class="user__item">
+              <a class="user__link" href="#">
+                <img class="user-video__img" src="/img/user-pic-four.jpg" alt="image" width="250" height="150" srcset="/img/user-pic-four.jpg 1x, /img/user-pic-four@2x.jpg 2x">
+                <span class="user-video__time">6:40</span>
+                <p class="user-video__title">Telescopes 101</p>
+
+                <div class="user-video__bottom">
+                  <p class="user-video__view-amount">11k views · 6 months ago</p>
+                  <p class="user-video__author">Dollie Blair</p>
+                </div>
+              </a>
+            </li>
+            <li class="user__item">
+              <a class="user__link" href="#">
+                <img class="user-video__img" src="/img/user-pic-five.jpg" alt="image" width="250" height="150" srcset="/img/user-pic-five.jpg 1x, /img/user-pic-five@2x.jpg 2x">
+                <span class="user-video__time">1:45</span>
+                <p class="user-video__title">Medical Care Is Just</p>
+
+                <div class="user-video__bottom">
+                  <p class="user-video__view-amount">18k views · 2 days ago</p>
+                  <p class="user-video__author">Dollie Blair</p>
+                </div>
+              </a>
+            </li>
+            <li class="user__item">
+              <a class="user__link" href="#">
+                <img class="user-video__img" src="/img/user-pic-six.jpg" alt="image" width="250" height="150" srcset="/img/user-pic-six.jpg 1x, /img/user-pic-six.jpg@2x.jpg 2x">
+                <span class="user-video__time">4:15</span>
+                <p class="user-video__title">Moon Gazing</p>
+
+                <div class="user-video__bottom">
+                  <p class="user-video__view-amount">67k views  ·  4 months ago</p>
+                  <p class="user-video__author">Dollie Blair</p>
+                </div>
+              </a>
+            </li> -->
+          </ol>
+        </div>
+      </section>
+
+      <!-- RECOMMENDED SECTION  -->
+      <section class="recommemded">
+        <div class="container">
+          <h3 class="recommended__heading">Recommended</h3>
+          <ol class="recommended__list js-recommended-list">
+
+            <template class="js-recommended-item-template">
+              <li class="recommended__item">
+                <a class="recommended__link" href="#">
+                  <img class="recommended__img" src="/img/recommend-img-1.jpg" alt="mans image" width="540" height="250" srcset="/img/recommend-img-1.jpg 1x, /img/recommend-img-1@2x.jpg 2x">
+                  <span class="recommended__video-duration">3:40</span>
+                  <p class="recommended__video-title">Dude You Re Getting A Telescope</p>
+
+                  <div class="recommended__bottom">
+                    <p class="recommended__time">34k views · 5 months ago</p>
+                    <p class="recommended__video-author">Gussie French</p>
+                  </div>
+                </a>
+              </li>
+            </template>
+
+            <!-- <li class="recommended__item">
+              <a class="recommended__link" href="#">
+                <img class="recommended__img" src="/img/recommend-img-2.jpg" alt="mans image" width="540" height="250" srcset="/img/recommend-img-2.jpg 1x, /img/recommend-img-2@2x.jpg 2x">
+                <span class="recommended__video-duration">2:12</span>
+                <p class="recommended__video-title">Moon Gazing</p>
+
+                <div class="recommended__bottom">
+                  <p class="recommended__time">54k views  ·  11 months ago</p>
+                  <p class="recommended__video-author">Edward Osborne</p>
+                </div>
+              </a>
+            </li>
+            <li class="recommended__item">
+              <a class="recommended__link" href="#">
+                <img class="recommended__img" src="/img/recommend-img-3.jpg" alt="mans image" width="540" height="250" srcset="/img/recommend-img-3.jpg 1x, /img/recommend-img-3@2x.jpg 2x">
+                <span class="recommended__video-duration">3:40</span>
+                <p class="recommended__video-title">Moon Gazing</p>
+
+                <div class="recommended__bottom">
+                  <p class="recommended__time">125k views  ·  4 months ago</p>
+                  <p class="recommended__video-author">Gussie French</p>
+                </div>
+              </a>
+            </li> -->
+          </ol>
+        </div>
+      </section>
+
+       <!-- FOOD AND DRINK SECTION  -->
+      <section class="food">
+        <div class="container">
+
+          <div class="food-info">
+            <img class="food__image" src="/img/food.jpg" alt="food image" width="50" height="50">
+            <p class="food__title">Food & Drink</p>
+            <span class="food__extra-info">Recommended channel for you</span>
+          </div>
+
+          <ol class="food__list js-food-list">
+
+            <template class="js-food-item-template">
+              <li class="food__item">
+                <a class="food__link" href="#">
+                  <img class="food-video__img" src="/img/food-img-1.jpg" alt="image" width="250" height="150" srcset="/img/food-img-1.jpg 1x, /img/food-img-1@2x.jpg 2x">
+                  <span class="food-video__time">7:36</span>
+                  <p class="food-video__title">Astronomy Or Astrology</p>
+
+                  <div class="food-video__bottom">
+                    <p class="food-video__view-amount">240k views  ·  4 months ago</p>
+                    <p class="food-video__author">Food & Drink</p>
+                  </div>
+                </a>
+              </li>
+            </template>
+
+            <!-- <li class="food__item">
+              <a class="food__link" href="#">
+                <img class="food-video__img" src="/img/food-img-2.jpg" alt="image" width="250" height="150" srcset="/img/food-img-2.jpg 1x, /img/food-img-2@2x.jpg 2x">
+                <span class="food-video__time">2:19</span>
+                <p class="food-video__title">Advertising Outdoors</p>
+
+                <div class="food-video__bottom">
+                  <p class="food-video__view-amount">13k views  ·  15 days ago</p>
+                  <p class="food-video__author">Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="food__item">
+              <a class="food__link" href="#">
+                <img class="food-video__img" src="/img/food-img-3.jpg" alt="image" width="250" height="150" srcset="/img/food-img-3.jpg 1x, /img/food-img-3@2x.jpg 2x">
+                <span class="food-video__time">9:05</span>
+                <p class="food-video__title">Radio Astronomy</p>
+
+                <div class="food-video__bottom">
+                  <p class="food-video__view-amount">1k views  ·  11 months ago</p>
+                  <p class="food-video__author">Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="food__item">
+              <a class="food__link" href="#">
+                <img class="food-video__img" src="/img/food-img-4.jpg" alt="image" width="250" height="150" srcset="/img/food-img-4.jpg 1x, /img/food-img-4@2x.jpg 2x">
+                <span class="food-video__time">3:40</span>
+                <p class="food-video__title">A Good Autoresponder</p>
+
+                <div class="food-video__bottom">
+                  <p class="food-video__view-amount">45k views  ·  2 months ago</p>
+                  <p class="food-video__author">Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="food__item">
+              <a class="food__link" href="#">
+                <img class="food-video__img" src="/img/food-img-5.jpg" alt="image" width="250" height="150" srcset="/img/food-img-5.jpg 1x, /img/food-img-5@2x.jpg 2x">
+                <span class="food-video__time">1:56</span>
+                <p class="food-video__title">Baby Monitor Technology</p>
+
+                <div class="food-video__bottom">
+                  <p class="food-video__view-amount">86k views  ·  7 days ago</p>
+                  <p class="food-video__author">Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="food__item">
+              <a class="food__link" href="#">
+                <img class="food-video__img" src="/img/food-img-6.jpg" alt="image" width="250" height="150" srcset="/img/food-img-6.jpg 1x, /img/food-img-6@2x.jpg 2x">
+                <span class="food-video__time">4:15</span>
+                <p class="food-video__title">Asteroids</p>
+
+                <div class="food-video__bottom">
+                  <p class="food-video__view-amount">123k views  ·  4 months ago</p>
+                  <p class="food-video__author">Food & Drink</p>
+                </div>
+              </a>
+            </li> -->
+          </ol>
+        </div>
+      </section>
+      <div></div>
+    </div>
+    </div>
+    <!-- SETTINGS  -->
+    <div class="setting container">
+      <a class="settings__link" href="#">Settings</a>
+    </div>
+  </main>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
